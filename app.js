@@ -144,7 +144,7 @@ meriApp.delete('/user-delete', function(req, res){
 
 meriApp.post('/create-user', upload.array('pic',20), function(req, res){
 
-    req.body.pic = req.files[0].originalname;
+    // req.body.pic = req.files[0].originalname;
 
     users.push(req.body);
     console.log(req.body)
